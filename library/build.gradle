@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'bintray-release'
+//apply plugin: 'bintray-release'
 
 android {
     compileSdkVersion 22
@@ -25,6 +25,7 @@ dependencies {
     compile 'com.android.support:support-annotations:22.2.0'
 }
 
+/*
 publish {
     userOrg = 'drummer-aidan'
     groupId = 'com.afollestad'
@@ -35,3 +36,4 @@ publish {
     issueTracker = "${website}/issues"
     repository = "${website}.git"
 }
+*/
