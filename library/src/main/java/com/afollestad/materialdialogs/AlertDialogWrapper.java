@@ -12,6 +12,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.annotation.UiThread;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListAdapter;
 
 import java.util.ArrayList;
@@ -159,6 +160,10 @@ public class AlertDialogWrapper {
                 }
             };
             return this;
+        }
+
+        public void formatEditText(EditText editText) {
+            builder.formatEditText(editText);
         }
 
         @UiThread

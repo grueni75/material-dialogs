@@ -432,6 +432,14 @@ public class MaterialDialog extends DialogBase implements
             return itemColor;
         }
 
+        public final int getContentColor() {
+            return contentColor;
+        }
+
+        public final int getWidgetColor() {
+            return widgetColor;
+        }
+
         public final Typeface getRegularFont() {
             return regularFont;
         }
@@ -1067,6 +1075,12 @@ public class MaterialDialog extends DialogBase implements
 
         public Builder inputMaxLength(int maxLength) {
             return inputMaxLength(maxLength, 0);
+        }
+
+        public void formatEditText(EditText editText) {
+            editText.setTextColor(getContentColor());
+            editText.setHintTextColor(DialogUtils.adjustAlpha(getContentColor(), 0.3f));
+            MDTintHelper.setTint(editText,getWidgetColor());
         }
 
         /**
