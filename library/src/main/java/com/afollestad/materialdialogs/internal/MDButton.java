@@ -4,7 +4,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v7.internal.text.AllCapsTransformationMethod;
+import android.support.v7.text.AllCapsTransformationMethod;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.TextView;
@@ -15,7 +15,7 @@ import com.afollestad.materialdialogs.util.DialogUtils;
 
 /**
  * @author Kevin Barry (teslacoil) 4/02/2015
- */
+ */wh
 public class MDButton extends TextView {
 
     private boolean mStacked = false;
