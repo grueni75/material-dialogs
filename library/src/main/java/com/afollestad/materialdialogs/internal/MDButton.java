@@ -15,7 +15,7 @@ import com.afollestad.materialdialogs.util.DialogUtils;
 
 /**
  * @author Kevin Barry (teslacoil) 4/02/2015
- */wh
+ */
 public class MDButton extends TextView {
 
     private boolean mStacked = false;
